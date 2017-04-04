@@ -9,7 +9,7 @@ public class HelloWorld {
 
         int totalHours = Days * hoursPerDay;
 
-        System.out.println("Total Time: " + totalHours + "시간입니다.");
+        System.out.println("총 수업시간은? " + totalHours + "시간입니다.");
 
 
         int busCost = 1100;
