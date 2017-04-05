@@ -14,8 +14,8 @@ public class PasswordGenerator {
 
         System.out.println("문자를 입력하고 Enter키를 누르세요. (첫글자는 소문자로 입력하세요.)");
         System.out.print("입력: ");
-        Scanner scan = new Scanner(System.in);
-        String inputData = scan.nextLine();
+        Scanner in = new Scanner(System.in);
+        String inputData = in.nextLine();
 
         String groundLiteral1 = "$$"; // 앞에 입력해야 하는 데이터 값
         String groundLiteral2 = "##"; // 뒤에 입력해야 하는 데이터 값
