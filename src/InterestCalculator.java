@@ -38,7 +38,8 @@ public class InterestCalculator {
          */
 
 
-        double interest = principal * (interestRate / 100) * (months / 12);
+        double interest = calcInterest(principal, months, interestRate);
+
         double total = interest + principal;
 
 
@@ -49,6 +50,17 @@ public class InterestCalculator {
         System.out.println(months + "개월 후 당신은 "
                 + total + "원을 받을 수 있습니다.");
         // System.out.printf("%d 개월 후 당신은 %f원을 받을 수 있습니다.", months, total);
+
+
+    }
+
+    public static double calcInterest(
+            int principal, int months, double rate) {
+
+        double interest =
+                principal * (rate / 100) * (months / 12);
+
+        return interest;
 
 
     }

@@ -4,12 +4,32 @@
 public class IPadPro {
     public static void main(String[] args) {
 
-        int originalPrice = 999000;
-        double discountRate = 0.15;
+        int regularPriceForiPadPro = 999000;
+        double dcRate = 0.15;
 
-        double discountedPrice = originalPrice * (1 - discountRate);
 
-        System.out.println("iPad Pro 할인가는? " + (int)discountedPrice + "원입니다.");
+        System.out.println(getDiscountediPad(regularPriceForiPadPro, dcRate));
+        //리턴받은 값을 println메소드를 이용하여서 바로 출력
+
+        int resultPrice2 = getDiscountediPad(regularPriceForiPadPro, dcRate);
+        //getDiscountediPad 메소드를 호출해서 return 받은 resultPrice값을 resultPrice2에 대입하여
+        System.out.println(resultPrice2);
+        //출력
+
 
     }
+
+
+    public static int getDiscountediPad(int price, double dcRate) {
+        int resultPrice =
+                (int)(price * (1 - dcRate));
+
+        //System.out.println(resultPrice+"원");
+        //return 0;
+
+        return resultPrice;
+    }
+
+
+
 }

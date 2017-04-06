@@ -28,7 +28,6 @@ public class ArrayListExample {
         }
 
 
-
         // 2. 리스트를 순화해서 전체 단어의 글자수의 평균을 구한다.
 
         int wordTotalCount = 0;
@@ -43,7 +42,7 @@ public class ArrayListExample {
 
         // 3. 단어가 5자 이하인 새로운 리스트를 생성한다.
         List<String> newList = new ArrayList<>();
-//
+
         for (String e : wordList) {
             if (e.length() <= 5) {
                 newList.add(e);
@@ -51,8 +50,13 @@ public class ArrayListExample {
         }
 
         System.out.println(newList);
+
+
     }
+
 }
+
+
 
 
 
