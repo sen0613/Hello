@@ -10,9 +10,9 @@ public class ScannerTest {
 
         System.out.println("단어를 입력하시고 엔터를 치세요.");
 
-        String inputted = in.nextLine();
+        String inputData = in.nextLine();
 
-        System.out.println("키보드로 입력한 글자는?" + inputted); // 직접 입력 -> 출력
+        System.out.println("키보드로 입력한 글자는?" + inputData); // 직접 입력 -> 출력
 
     }
 }
