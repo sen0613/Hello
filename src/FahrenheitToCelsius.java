@@ -3,12 +3,19 @@
  */
 public class FahrenheitToCelsius {
 
+    public static double celTemp(double b){
+        double a = (b - 32) / 1.8;
+        return a;
+    }
+
     public static void main(String[] args) {
 
         double fahrenheitTemperature = 66.2;
-        double celsiusTemperature = (fahrenheitTemperature - 32) / 1.8;
+        System.out.println("섭씨온도는? " + celTemp(fahrenheitTemperature) + "˚C 입니다.");
 
-        System.out.println("섭씨온도는? " + celsiusTemperature + "˚C 입니다.");
+
 
     }
+
+
 }
