@@ -5,17 +5,15 @@ public class CelsiusToFahrenheit {
 
     public static void main(String[] args) {
 
-        int celsiusTemperature = 19;
+        int celsius = 19;
 
-        //double fahrenheitTemperature = (celsiusTemperature * 1.8) + 32;
+        CelsiusToFahrenheitService service =
+                new CelsiusToFahrenheitService();
 
-        System.out.println("화씨온도는? " + fahTemp(celsiusTemperature) + "˚F 입니다.");
+        double result = service.toFahrenheit(celsius);
+
+
+        System.out.println("화씨온도는? " + result + "˚F 입니다.");
     }
 
-    public static double fahTemp(int celsiusTemperature) {
-        //return (celsiusTemperature * 1.8) + 32;
-
-        double fahrenheitTemperature=(celsiusTemperature * 1.8) + 32;
-        return fahrenheitTemperature;
-    }
 }

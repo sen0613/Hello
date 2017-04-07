@@ -58,15 +58,22 @@ public class ArrayExample {
 //
 //        }
 
-        int sum = 0;
-        for(int e : iArr) {
+        double result = calcAverage(iArr);
 
-           sum = sum + e; // 누적 accumulation..
+
+        System.out.println(result);
+
+    }
+
+    public static double calcAverage(int[] intArr) {
+        //괄호 안에 입력 값 넣기
+        int sum = 0;
+        for (int e : intArr) {
+            sum += e;
         }
 
-        int countOfArr = iArr.length;
+        return (double) sum / intArr.length;
 
-        System.out.println(sum / (double)countOfArr);
 
     }
 }
