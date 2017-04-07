@@ -48,11 +48,11 @@ public class GourmetReview {
         int totalScore = 0;
 
 
-        for (Gourmet a : list) {
-            totalScore += a.score;
+        for (Gourmet e : list) { // Gourmet 클래스에서 가져왔기 때문에 형식은 'Gourmet'
+            totalScore += e.score;
         }
 
-        System.out.printf("점수 평균은 %f 입니다. ",
+        System.out.printf("맛집 점수의 평균은 %.2f 입니다. ",
                 (double)totalScore / list.size() );
 
 
