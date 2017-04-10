@@ -64,10 +64,26 @@ public class GourmetReview {
 
         /* 1. 맛집 점수의 평균 구하기 */
         GourmetService service = new GourmetService();
+
         double average = service.calcAverageScore(list);
 
 
+
         System.out.printf("맛집 점수의 평균은 %.2f 입니다. ", (double)average);
+
+
+
+
+        Gourmet g1 = new Gourmet("a", "b", 25);
+        Gourmet g2 = new Gourmet("a", "b", 30);
+
+        g1.getScore();
+        g2.getScore();
+
+
+        // 함수: 입력 값이 같으면 항상 결과가 같음
+        // 메소드: 입력 값이 같아도 다른 결과가 나오는 경우가 있음
+
 
 
 
