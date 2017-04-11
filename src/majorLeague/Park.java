@@ -13,6 +13,10 @@ public class Park {
     private String state;
     private String country;
 
+    public Park() {
+
+    }
+
     public Park(String parkKey, String parkName, String parkAlias, String city, String state, String country) {
         this.parkKey = parkKey;
         this.parkName = parkName;

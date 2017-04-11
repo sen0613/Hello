@@ -1,4 +1,5 @@
 package majorLeague;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -6,23 +7,37 @@ import java.util.List;
  */
 public class ParkService {
     //1
-    public int theNumberOfNonUSParks(List<Park> list) {
-        int sumOfNonUSParks = 0;
-        for (Park e : list) {
-            if (e.getCountry().contains("US")){
-                sumOfNonUSParks++;
+    public int theNumberOfNonUSParks(List<Park> parkList) {
+
+        int USCnt = 0;
+        for (Park e : parkList) {
+            if (e.getCountry().equals("US")){
+                USCnt++;
             }
         }
         //출력
-        int result = sumOfNonUSParks++;
-        return result;
+        return USCnt;
     }
 
     //2
-    public void theNumberOfParksWhichHaveAlias(List<String> park) {
-        int theNumberOfParksWhichHaveAlias = 0;
-        for (String e : park) {
+    public List<Park> theNumberOfParksWhichHaveAlias(List<Park> parkList) {
+        List<Park> newList = new ArrayList<>();
 
+        for (Park e : parkList) {
+            if(!e.getParkAlias().equals("US")) {
+                newList.add(e);
+            }
         }
+        return newList;
+    }
+
+    //3
+    public double averageOfParkNameSpelling(List<Park> parkList) {
+
+        int totalParkNameLength = 0;
+        for (Park e : parkList) {
+            totalParkNameLength += e.getParkName().length();
+        }
+        return (double) totalParkNameLength / parkList.size();
     }
 }
