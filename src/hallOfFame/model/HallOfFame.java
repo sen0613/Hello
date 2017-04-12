@@ -1,4 +1,4 @@
-package hallOfFame;
+package hallOfFame.model; //hallOfFame 패키지 하위의 model 패키지 안에 있다는 뜻
 
 /**
  * Created by danawacomputer on 2017-04-11.

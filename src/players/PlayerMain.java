@@ -38,9 +38,10 @@ public class PlayerMain {
 
 //        PlayerService service = new PlayerService();
         Player player = PlayerService.getHighestSalaryPlayer(players);
+        System.out.println(player);
 
 //        System.out.printf("%s의 연봉은 %d불 입니다.",
 //                player.getPlayerId(),player.getSalary());
-        System.out.println(player);
+
     }
 }

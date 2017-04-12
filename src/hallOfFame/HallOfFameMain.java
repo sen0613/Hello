@@ -1,10 +1,8 @@
 package hallOfFame;
-import players.Player;
+import hallOfFame.model.HallOfFame; //풀네임 적기/ 패키지 hallOfFame 하위의 패키지 model 안의 HallOfFame 클래스
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,6 +63,9 @@ public class HallOfFameMain {
 
             // 객체 하나로 만들어주는 것
                 halls.add(fame);
+
+                String s = "hello";
+
 
             }
 

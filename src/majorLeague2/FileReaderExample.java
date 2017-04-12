@@ -1,4 +1,8 @@
-package majorLeague;
+package majorLeague2;
+
+import majorLeague2.model.Park;
+import majorLeague2.service.ParkService;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
