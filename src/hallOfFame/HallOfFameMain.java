@@ -30,36 +30,47 @@ public class HallOfFameMain {
             // while 문 안에서만 돌아가는 임시 객체: fame
             HallOfFame fame = new HallOfFame();
 
-            // Player ID
             fame.setPlayerID(splitted[0]);
+            fame.setBallots(NullUtil.parseIn(splitted[3]));
+            fame.setNeeded(NullUtil.parseIn(splitted[4]));
+            fame.setVotes(
+                    splitted[5].equals("") ? 0 : Integer.parseInt(splitted[5]));
 
-            // Ballots
-            if (splitted[3].equals("")) {
-                fame.setBallots(0);
-            } else {
-                fame.setBallots(Integer.parseInt(splitted[3]));
-            }
-
-            // Needed
-            if (splitted[4].equals("")) {
-                fame.setNeeded(0);
-            } else {
-                fame.setNeeded(Integer.parseInt(splitted[4]));
-            }
-
-            // Votes
-            if (splitted[5].equals("")) {
-                fame.setVotes(0);
-            } else {
-                fame.setVotes(Integer.parseInt(splitted[5]));
-            }
+//
+//            // Player ID
+//            fame.setPlayerID(splitted[0]);
+//
+//            // Ballots
+//            if (splitted[3].equals("")) {
+//                fame.setBallots(0);
+//            } else {
+//                fame.setBallots(Integer.parseInt(splitted[3]));
+//            }
+//
+//
+//            // Needed
+//            if (splitted[4].equals("")) {
+//                fame.setNeeded(0);
+//            } else {
+//                fame.setNeeded(Integer.parseInt(splitted[4]));
+//            }
+//
+//
+//            // Votes
+//            if (splitted[5].equals("")) {
+//                fame.setVotes(0);
+//            } else {
+//                fame.setVotes(Integer.parseInt(splitted[5]));
+//            }
 
             // 객체 하나로 만들어주는 것
                 halls.add(fame);
 
             }
 
+
             // mapping할 ArrayList
+        // HallOfFame --> PlayerAverage
         List<PlayerAverage> newList = new ArrayList<>();
 
         for (HallOfFame e : halls) {
@@ -74,6 +85,9 @@ public class HallOfFameMain {
 
         }
 
+        System.out.println(newList.size());
+        System.out.println(newList.get(2000));
+        System.out.println(newList.get(1991));
         System.out.println(newList);
 
 
