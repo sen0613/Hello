@@ -1,25 +1,28 @@
-package majorLeague;
+package map.model;
 
 /**
- * Created by danawacomputer on 2017-04-10.
+ * Created by danawacomputer on 2017-04-13.
  */
 public class Park {
-
-
-    private String parkKey;
     private String parkName;
     private String parkAlias;
     private String city;
     private String state;
     private String country;
 
-    public String getParkKey() {
-        return parkKey;
+    public Park(){}
+
+    public Park(String parkName, String parkAlias,
+                String city, String state, String country) {
+
+        this.parkName = parkName;
+        this.parkAlias = parkAlias;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+
     }
 
-    public void setParkKey(String parkKey) {
-        this.parkKey = parkKey;
-    }
 
     public String getParkName() {
         return parkName;
@@ -64,21 +67,11 @@ public class Park {
     @Override
     public String toString() {
         return "Park{" +
-                "parkKey='" + parkKey + '\'' +
-                ", parkName='" + parkName + '\'' +
+                "parkName='" + parkName + '\'' +
                 ", parkAlias='" + parkAlias + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", country='" + country + '\'' +
                 '}';
-    }
-
-    public Park(String parkKey, String parkName, String parkAlias, String city, String state, String country) {
-        this.parkKey = parkKey;
-        this.parkName = parkName;
-        this.parkAlias = parkAlias;
-        this.city = city;
-        this.state = state;
-        this.country = country;
     }
 }

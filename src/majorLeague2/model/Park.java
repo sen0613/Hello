@@ -13,7 +13,7 @@ public class Park {
     private String state;
     private String country;
 
-    public Park() {
+    public Park(String s, String s1, String s2, String s3, String s4) {
 
     }
 
