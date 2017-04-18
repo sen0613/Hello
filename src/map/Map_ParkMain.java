@@ -1,7 +1,6 @@
 package map;
 
 import map.model.Park;
-import map.service.ParkService;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -40,12 +39,6 @@ public class Map_ParkMain {
         } catch (IOException ie) {
             System.out.println("파일을 실제로 IO 하다가 에러가 발생했습니다.");
         }
-
-        ParkService service = new ParkService();
-
-        service.validateUserId();
-        service.validatePassword();
-
 
     }
 }
